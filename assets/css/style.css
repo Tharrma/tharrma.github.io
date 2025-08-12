@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #0066cc;
+  --accent-color: #ff6f61;
+  --bg-color: #fefefe;
+  --text-color: #222;
+  --nav-bg: #004080;
+  --footer-bg: #e0e0e0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+header {
+  background: var(--nav-bg);
+  color: white;
+  padding: 1.2em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0 0 0.5em;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2em 1.5em;
+}
+
+footer {
+  text-align: center;
+  background: var(--footer-bg);
+  padding: 1em;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  background: #f0f8ff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.about img {
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+}
+
+.about div {
+  flex: 1;
+}
+
+.news ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.news li {
+  background: #fff6f6;
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: 0.8em;
+  padding: 0.7em 1em;
+  border-radius: 4px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+  color: var(--primary-color);
+}
+
+.project {
+  background: #f9f9f9;
+  border-left: 5px solid var(--primary-color);
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4em;
+  margin-bottom: 0.2em;
+}
+
+.site-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
+  color: #d0e2ff;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.8em 1em;
+  background: #f0f8ff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-card i {
+  font-size: 1.3em;
+  color: var(--primary-color);
+}
+
+.contact-card:hover {
+  background: #e6f2ff;
+  transform: translateY(-2px);
+}
+
+.contact-card.email i {
+  color: #ff6f61;
+}
+
+.contact-card.linkedin i {
+  color: #0a66c2;
+}
+
+.contact-card.scholar i {
+  color: #5a2ca0;
+}
